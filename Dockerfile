@@ -4,7 +4,7 @@
 # Build:  docker build -t d-party-frontend .
 # Run:    docker run -p 3000:3000 d-party-frontend
 
-FROM node:22-alpine AS base
+FROM node:26-alpine AS base
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
 RUN corepack enable
